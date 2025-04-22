@@ -1,0 +1,34 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="service-container">
+  <h1>Our Services</h1>
+  <div class="service-gallery">
+    <div class="service-box">
+      <img src="{% static 'image/worship.jpg' %}" alt="Service 1">
+      <p>Sunday Worship</p>
+    </div>
+    <div class="service-box">
+      <img src="{% static 'image/study.jpg' %}" alt="Service 2">
+      <p>Bible Study</p>
+    </div>
+    <div class="service-box">
+      <img src="{% static 'image/sundayschool.jpg' %}" alt="Service 3">
+      <p>Sunday School</p>
+    </div>
+    <div class="service-box">
+      <img src="{% static 'image/preachersmeeting.jpg' %}" alt="Service 4">
+      <p>Preachers Meeting</p>
+    </div>
+    <div class="service-box">
+      <img src="{% static 'image/gospelmeeting.jpg' %}" alt="Service 5">
+      <p>Gosepl Meeting</p>
+    </div>
+    <div class="service-box">
+      <img src="{% static 'image/youthmeeting.jpg' %}" alt="Service 6">
+      <p>Youth Meeting</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

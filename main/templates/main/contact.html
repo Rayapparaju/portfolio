@@ -1,0 +1,49 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Contact | COC Stantanpuram{% endblock %}
+
+{% block content %}
+<div class="contact-container">
+  <h1>Contact Us</h1>
+
+  <div class="contact-wrapper">
+    <!-- Contact Form -->
+    <form action="" method="post" class="contact-form">
+      {% csrf_token %}
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Address and Map -->
+    <div class="contact-info">
+      <h2>Our Location</h2>
+      <p><strong>Church of Christ, Stantanpuram</strong></p>
+      <p>Stantanpuram </p>
+      <p>Near 102 Sachivalyam, Kurnool, Andhra Pradesh -518006</p>
+      <p>Email: churchesofchrist.stp@gmail.com</p>
+      <p>Phone: +91-9052056881</p>
+
+      <!-- Google Maps Embed -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.0635112344965!2d78.45657461478026!3d17.385044088084206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9756b7320b6f%3A0x3e1b0c81a6d0d2f0!2sChurch%20of%20Christ!5e0!3m2!1sen!2sin!4v1616187753531!5m2!1sen!2sin" 
+          width="100%" 
+          height="250" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

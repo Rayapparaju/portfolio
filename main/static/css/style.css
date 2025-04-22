@@ -1,0 +1,280 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #548ca7;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .nav-links a:hover {
+    color: #f0a500;
+  }
+  
+  /* Home Page Styling */
+  .home-container {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .home-image {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px 0;
+    border: solid burlywood;
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #548ca7;
+    color: white;
+    border-radius: 10px;
+  }
+  h1{
+    color: brown;
+    text-shadow: 0 0 2px  black;
+  }
+  .logo{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+  }
+
+  /* about */
+  /* About Page Styling */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-container h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+}
+
+.about-container p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+  text-justify: inter-word;
+  
+}
+
+/* Service */
+.service-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.service-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-box {
+  width: 30%;
+  min-width: 250px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+.service-box img {
+  width: 100%;
+  height: 80%;
+  border-radius: 8px;
+}
+
+/* gallery */
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.gallery-container h1 {
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 40px);
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+/* contact  */
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.contact-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #357bd8;
+}
+
+/* message */
+.messages {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.alert {
+  background-color: #e0ffe0;
+  color: #2d662d;
+  border: 1px solid #a4d4a4;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.gallery-item{
+  width: 100%;
+  height: 80%;
+  border-radius: 8px;
+}
+/* contact */
+.contact-container {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-form, .contact-info {
+  flex: 1 1 45%;
+  margin-left: 35px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.map-container {
+  margin-top: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 30px;
+}
+
+
+
+
+
+  
